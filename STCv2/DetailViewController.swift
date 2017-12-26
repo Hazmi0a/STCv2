@@ -10,14 +10,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailContent: UILabel!
+    @IBOutlet weak var detailImage: UIImageView!
+    
 
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+            if let title = detailTitle {
+                title.text = detail.title.uppercased()
+            }
+            if let content = detailContent {
+                content.text = detail.content
+            }
+            if let image = detailImage {
+                let url = URL(string: (detailItem?.image)!)!
+                image.downloadedFrom(url: url)
             }
         }
     }
@@ -33,7 +42,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Article? {
         didSet {
             // Update the view.
             configureView()

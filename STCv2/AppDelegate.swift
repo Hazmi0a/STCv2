@@ -20,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
+        
+        navigationController.navigationBar.layer.masksToBounds = false
+        navigationController.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
+        navigationController.navigationBar.layer.shadowOpacity = 0.8
+        navigationController.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        navigationController.navigationBar.layer.shadowRadius = 2
+
+
         return true
     }
 

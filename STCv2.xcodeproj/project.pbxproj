@@ -19,6 +19,12 @@
 		D1BC26A31FF1965A00B3E6B2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1BC269E1FF1965300B3E6B2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1BC26A41FF1965A00B3E6B2 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BC269F1FF1965300B3E6B2 /* RealmSwift.framework */; };
 		D1BC26A51FF1965A00B3E6B2 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1BC269F1FF1965300B3E6B2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1BC26AB1FF19A6000B3E6B2 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC26AA1FF19A6000B3E6B2 /* ArticleCell.swift */; };
+		D1BC26AD1FF19B3C00B3E6B2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC26AC1FF19B3C00B3E6B2 /* Article.swift */; };
+		D1BC26AF1FF1C4ED00B3E6B2 /* ExtendedUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC26AE1FF1C4ED00B3E6B2 /* ExtendedUIImageView.swift */; };
+		D1BC26B31FF1D91200B3E6B2 /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1BC26B11FF1D8F000B3E6B2 /* Quicksand-Bold.otf */; };
+		D1BC26B41FF1D91200B3E6B2 /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1BC26B21FF1D90400B3E6B2 /* Merriweather-Light.otf */; };
+		D1BC26B61FF2E98700B3E6B2 /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1BC26B51FF2E97900B3E6B2 /* Merriweather-Black.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +53,12 @@
 		D1BC26981FF1943000B3E6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1BC269E1FF1965300B3E6B2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		D1BC269F1FF1965300B3E6B2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		D1BC26AA1FF19A6000B3E6B2 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		D1BC26AC1FF19B3C00B3E6B2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D1BC26AE1FF1C4ED00B3E6B2 /* ExtendedUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedUIImageView.swift; sourceTree = "<group>"; };
+		D1BC26B11FF1D8F000B3E6B2 /* Quicksand-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.otf"; sourceTree = "<group>"; };
+		D1BC26B21FF1D90400B3E6B2 /* Merriweather-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.otf"; sourceTree = "<group>"; };
+		D1BC26B51FF2E97900B3E6B2 /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 		D1BC267E1FF1943000B3E6B2 = {
 			isa = PBXGroup;
 			children = (
+				D1BC26B01FF1D8B100B3E6B2 /* Fonts */,
 				D1BC26891FF1943000B3E6B2 /* STCv2 */,
 				D1BC26881FF1943000B3E6B2 /* Products */,
 			);
@@ -83,8 +96,11 @@
 		D1BC26891FF1943000B3E6B2 /* STCv2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1BC26AE1FF1C4ED00B3E6B2 /* ExtendedUIImageView.swift */,
 				D1BC268A1FF1943000B3E6B2 /* AppDelegate.swift */,
 				D1BC268C1FF1943000B3E6B2 /* MasterViewController.swift */,
+				D1BC26AA1FF19A6000B3E6B2 /* ArticleCell.swift */,
+				D1BC26AC1FF19B3C00B3E6B2 /* Article.swift */,
 				D1BC268E1FF1943000B3E6B2 /* DetailViewController.swift */,
 				D1BC26901FF1943000B3E6B2 /* Main.storyboard */,
 				D1BC26931FF1943000B3E6B2 /* Assets.xcassets */,
@@ -94,6 +110,16 @@
 				D1BC269F1FF1965300B3E6B2 /* RealmSwift.framework */,
 			);
 			path = STCv2;
+			sourceTree = "<group>";
+		};
+		D1BC26B01FF1D8B100B3E6B2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC26B11FF1D8F000B3E6B2 /* Quicksand-Bold.otf */,
+				D1BC26B21FF1D90400B3E6B2 /* Merriweather-Light.otf */,
+				D1BC26B51FF2E97900B3E6B2 /* Merriweather-Black.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BC26B61FF2E98700B3E6B2 /* Merriweather-Black.otf in Resources */,
+				D1BC26B31FF1D91200B3E6B2 /* Quicksand-Bold.otf in Resources */,
+				D1BC26B41FF1D91200B3E6B2 /* Merriweather-Light.otf in Resources */,
 				D1BC26971FF1943000B3E6B2 /* LaunchScreen.storyboard in Resources */,
 				D1BC26941FF1943000B3E6B2 /* Assets.xcassets in Resources */,
 				D1BC26921FF1943000B3E6B2 /* Main.storyboard in Resources */,
@@ -186,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BC26AB1FF19A6000B3E6B2 /* ArticleCell.swift in Sources */,
 				D1BC268F1FF1943000B3E6B2 /* DetailViewController.swift in Sources */,
 				D1BC268D1FF1943000B3E6B2 /* MasterViewController.swift in Sources */,
 				D1BC268B1FF1943000B3E6B2 /* AppDelegate.swift in Sources */,
+				D1BC26AD1FF19B3C00B3E6B2 /* Article.swift in Sources */,
+				D1BC26AF1FF1C4ED00B3E6B2 /* ExtendedUIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
